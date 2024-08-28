@@ -5,6 +5,7 @@
 body {
     width: 100%;
     height: auto;
+    margin: auto;
 }
 
 
@@ -200,7 +201,7 @@ nav {
 
     #explore {
         height: 3em;
-        margin-left: 7.5em;
+        margin-left: 8em;
     }
 
     #p-content {

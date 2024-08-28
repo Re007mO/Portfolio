@@ -3,6 +3,7 @@ body {
     height: auto;
     background-image: linear-gradient(to left, #d6dcf0, #f5e0e3);
     background-size: 101%;
+    margin: auto;
 }
 
 nav {
@@ -256,7 +257,7 @@ h3 {
         background-color: white;
         border-radius: 10px;
         margin-left: 4px;
-        height: 50vh;
+        height: fit-content;
     }
 
  
@@ -287,9 +288,11 @@ h3 {
         padding-left: 10px;
         font-size: large;
         float: left;
+        background-color: white;
     }
 
     .int2 {
+        background-color: white;
         padding-left: 10px;
         padding-right: 1em;
         float: right;
@@ -365,7 +368,7 @@ h3 {
         background-color: white;
         border-radius: 10px;
         margin-left: 4px;
-        height: 70vh;
+        height: fit-content;
     }
 
  
