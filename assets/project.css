@@ -3,6 +3,7 @@ body {
     margin: auto;
     width: 100%;
     height: auto;
+    padding-right: 0;
 }
 
 .container1 {
@@ -107,6 +108,7 @@ nav {
     padding-left: 7%;
     float: left;
     width: 500px;
+    display: inline;
 }
 
 .preview {
@@ -207,7 +209,7 @@ footer {
 
     .container {
         width: 93%;
-        height: 270vh;
+        height: 200vh;
         margin: 3em;
     }
     .preview {
@@ -227,6 +229,7 @@ footer {
     }
     footer{
         width: 320px;
+        height: 10px;
     }
 
 }
