@@ -64,6 +64,7 @@ nav {
     margin: 3em;
     background-color: white;
     height: 90vh;
+    padding-bottom: 10%;
     border-radius: 10px;
 }
 
@@ -147,6 +148,7 @@ nav {
     margin: 3em;
     border-radius: 10px;
     height: 130vh;
+    padding-bottom: 50%;
 }
 
 #abt {
@@ -257,7 +259,7 @@ h3 {
         background-color: white;
         border-radius: 10px;
         margin-left: 4px;
-        height: fit-content;
+        height: 100%;
     }
 
  
