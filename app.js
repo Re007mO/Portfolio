@@ -1,8 +1,3 @@
-const whatsapp = document.getElementById("whatsapp")
-whatsapp.addEventListener("click",function(){
-    alert("This is my Contact number: 01117285571 ")
-})
-
 
 const telegram = document.getElementById("telegram")
 telegram.addEventListener("click",function(){
