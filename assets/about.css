@@ -66,6 +66,7 @@ nav {
     height: 90vh;
     padding-bottom: 10%;
     border-radius: 10px;
+    overflow: auto; 
 }
 
 .circle {
