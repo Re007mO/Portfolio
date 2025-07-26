@@ -15,6 +15,30 @@ nav {
     border-radius: 10px;
 }
 
+#hamburger {
+    display: none;
+    /* نخبيها على الشاشات الكبيرة */
+    font-size: 30px;
+    cursor: pointer;
+    user-select: none;
+}
+
+/* Default: القائمة أفقي */
+#nav-ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 2em;
+}
+
+
+/* روابط الnav */
+.nav-a {
+    text-decoration: none;
+    color: black;
+}
+
 #logo {
     font-size: 30px;
     font-weight: 900;
@@ -66,7 +90,8 @@ nav {
     height: 90vh;
     padding-bottom: 10%;
     border-radius: 10px;
-    overflow: auto; 
+    overflow: auto;
+
 }
 
 .circle {
@@ -108,7 +133,8 @@ nav {
     font-family: Signika Negative;
     font-weight: 800;
 }
-.btn-w{
+
+.btn-w {
     font-size: 25px;
     width: fit-content;
     height: fit-content;
@@ -189,6 +215,111 @@ h3 {
     float: right;
 }
 
+.skills-section {
+    margin-top: 30px;
+    margin-left: 120px;
+}
+
+.skills-section h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.skill {
+    margin-bottom: 15px;
+}
+
+.skill p {
+    font-size: 18px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.progress-bar {
+    width: 500px;
+    background: #eee;
+    border-radius: 25px;
+    overflow: hidden;
+    height: 20px;
+}
+
+.progress {
+    height: 100%;
+    border-radius: 25px;
+    width: 0;
+    /* هيبدأ من صفر عشان نعمل أنيميشن */
+    transition: width 2s ease-in-out;
+}
+
+/* ألوان لكل مهارة */
+.html {
+    background: #e44d26;
+    width: 90%;
+}
+
+.css {
+    background: #2965f1;
+    width: 80%;
+}
+
+.js {
+    background: #f0db4f;
+    width: 70%;
+}
+
+.typescript {
+    background: #88d669;
+    ;
+    width: 60%;
+}
+
+.express {
+    background: #595e58;
+    width: 50%;
+}
+
+.progress {
+    width: 0;
+    animation: fill 2s forwards;
+}
+
+.html {
+    --target-width: 90%;
+    animation-delay: 0.2s;
+    background: #e44d26;
+}
+
+.css {
+    --target-width: 80%;
+    animation-delay: 0.4s;
+    background: #2965f1;
+}
+
+.js {
+    --target-width: 70%;
+    animation-delay: 0.6s;
+    background: #f0db4f;
+}
+
+.typescript {
+    --target-width: 60%;
+    animation-delay: 0.8s;
+    background: #88d669;
+}
+
+.express {
+    --target-width: 50%;
+    animation-delay: 0.8s;
+    background: #595e58;
+}
+
+@keyframes fill {
+    to {
+        width: var(--target-width);
+    }
+}
 
 @media (max-width:500px) {
     body {
@@ -222,13 +353,28 @@ h3 {
         font-size: small;
     }
 
+    #hamburger {
+        display: block;
+    }
+
+    #nav-ul {
+        display: none;
+        flex-direction: column;
+        gap: 1em;
+        margin-top: 10px;
+    }
+
+    #nav-ul.active {
+        display: flex;
+    }
+
     .image {
         width: 10em;
         height: 10em;
         margin-left: 6em;
     }
 
-    
+
     .buttons {
         position: absolute;
         top: 20%;
@@ -244,7 +390,7 @@ h3 {
         font-weight: 800;
     }
 
-    .btn-w{
+    .btn-w {
         font-size: 13px;
         width: fit-content;
     }
@@ -263,7 +409,7 @@ h3 {
         height: 100%;
     }
 
- 
+
     #p-content {
         font-weight: 600;
         font-size: small;
@@ -299,6 +445,24 @@ h3 {
         padding-left: 10px;
         padding-right: 1em;
         float: right;
+    }
+
+    .int,
+    .int2 {
+        float: none;
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+        font-size: medium;
+    }
+
+    .skills-section {
+        margin: 20px auto;
+        width: 80%;
+    }
+
+    .progress-bar {
+        width: 100%;
     }
 
 }
@@ -340,7 +504,7 @@ h3 {
         margin-left: 4em;
     }
 
-    
+
     .buttons {
         top: 30%;
         left: 45%;
@@ -355,7 +519,7 @@ h3 {
         font-weight: 800;
     }
 
-    .btn-w{
+    .btn-w {
         font-size: 13px;
         width: fit-content;
     }
@@ -374,7 +538,7 @@ h3 {
         height: fit-content;
     }
 
- 
+
     #p-content {
         font-weight: 600;
         font-size: small;
@@ -389,6 +553,7 @@ h3 {
         height: 250vh;
 
     }
+
 
     #abt {
         font-weight: 1000;
@@ -410,7 +575,23 @@ h3 {
         float: right;
     }
 
+    .int,
+    .int2 {
+        float: none;
+        width: 100%;
+        padding: 15px;
+        text-align: center;
+        font-size: large;
+    }
+
+    .skills-section {
+        margin: 30px auto;
+        width: 80%;
+    }
+
+    .progress-bar {
+        width: 90%;
+    }
 
 
 }
-
