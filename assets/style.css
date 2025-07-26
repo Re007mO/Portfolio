@@ -37,7 +37,7 @@ nav {
 #logo {
     font-size: 30px;
     font-weight: 900;
-    margin-right: 40%;
+    margin-right: 30%;
 
 }
 
@@ -49,7 +49,7 @@ nav {
 
 #nav-ul li {
     display: inline;
-    margin-right: 15px;
+    margin-right: 9px;
     font-weight: 600;
     padding: 20px;
     font-size: larger;
