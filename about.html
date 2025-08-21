@@ -22,6 +22,8 @@
     <main id="container">
         <nav>
             <p id="logo">Portfolio</p>
+            <div id="hamburger">&#9776;</div> 
+
             <ul id="nav-ul">
                 <li><a class="nav-a" href="index.html">Home</a></li>
                 <li><a class="nav-a" style="border-bottom: #f1c2c9 solid 3px; color: #fdbac4;"
@@ -117,7 +119,15 @@
             </div>
         </div>
     </main>
+<script>
+    const hamburger = document.getElementById('hamburger');
+const navUl = document.getElementById('nav-ul');
 
+hamburger.addEventListener('click', () => {
+  navUl.classList.toggle('active');
+});
+</script>
 </body>
 
 </html>
+
